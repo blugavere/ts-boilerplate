@@ -8,7 +8,7 @@ export class Server {
   private _services: Services;
 
   constructor() {
-    this._services = new Services();
+    // this._services = new Services();
 
     // Creates an express aplication, and imports our routes.
     // We keep the routes separate to make the code easer to comprehend.
@@ -16,7 +16,7 @@ export class Server {
     this._app.use(Routes);
 
     // Pass services on to express application
-    this._app.set('services', this._services);
+    this._app.set('services', {});
   }
 
   start(port: number | string) {
