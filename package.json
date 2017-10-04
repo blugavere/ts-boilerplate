@@ -1,0 +1,32 @@
+{
+  "name": "express-tedious-template",
+  "version": "1.0.1",
+  "description": "A template for an express server that uses tedious as the data backend",
+  "main": "dist/boot.js",
+  "scripts": {
+    "build": "gulp default",
+    "dev": "concurrently --names \"APP,TSC\" -c \"bgBlue.bold,bgMagenta.bold\" \"gulp watch\" \"npm start\" --kill-others",
+    "start": "nodemon dist/boot --watch dist --delay 5",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex McKenzie",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "tedious": "^2.0.0",
+    "tedious-connection-pool": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.5",
+    "@types/node": "^8.0.29",
+    "@types/tedious": "^1.8.31",
+    "@types/tedious-connection-pool": "^1.0.1",
+    "concurrently": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.2",
+    "nodemon": "^1.12.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  }
+}
