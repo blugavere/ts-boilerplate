@@ -7,5 +7,3 @@ cache:
   - node_modules
 services:
 - mongodb
-before_script:
-  - make init

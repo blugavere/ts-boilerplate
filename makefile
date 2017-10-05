@@ -8,4 +8,4 @@ dev:
 	ts-node ./src/boot.ts
 
 test:
-	mocha --compilers ts:ts-node/register,tsx:ts-node/register test
+	mocha test/*.ts --opts .mocharc
