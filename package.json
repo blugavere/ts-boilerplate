@@ -4,7 +4,8 @@
   "description": "A template for an express server that uses typescript",
   "main": "dist/boot.js",
   "scripts": {
-    "start": "nodemon dist/boot --watch dist --delay 5"
+    "start": "nodemon dist/boot --watch dist --delay 5",
+    "test": "make test"
   },
   "author": "Alex McKenzie",
   "license": "MIT",
@@ -13,6 +14,7 @@
     "body-parser": "^1.18.2",
     "boxed-injector": "1.1.2",
     "express": "^4.15.4",
+    "helmet": "3.8.2",
     "tedious": "^2.0.0",
     "tedious-connection-pool": "^1.0.5"
   },
