@@ -2,7 +2,7 @@ import * as express from 'express';
 import { Routes } from './routes/routes';
 import { Services } from './services/services';
 import * as Injector from 'boxed-injector';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 
 export class Server {
   private _app: express.Application;

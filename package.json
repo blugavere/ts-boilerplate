@@ -10,21 +10,18 @@
   "author": "Alex McKenzie",
   "license": "MIT",
   "dependencies": {
-    "@types/es6-promise": "0.0.33",
     "body-parser": "^1.18.2",
     "boxed-injector": "1.1.2",
     "express": "^4.15.4",
-    "helmet": "3.8.2",
-    "tedious": "^2.0.0",
-    "tedious-connection-pool": "^1.0.5"
+    "helmet": "3.8.2"
   },
   "devDependencies": {
+    "@types/es6-promise": "0.0.33",
     "@types/bluebird": "3.5.14",
     "@types/body-parser": "^1.16.5",
     "@types/mocha": "2.2.43",
     "@types/node": "^8.0.29",
     "chai": "4.1.2",
-    "concurrently": "^3.5.0",
     "mocha": "4.0.0",
     "nodemon": "^1.12.1",
     "ts-node": "3.3.0",
