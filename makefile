@@ -8,4 +8,4 @@ dev:
 	nodemon ./src/boot.ts
 
 test:
-	mocha test/*.ts --opts .mocharc
+	mocha --opts .mocharc
