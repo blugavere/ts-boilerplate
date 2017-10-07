@@ -2,9 +2,10 @@
 import types from '../../config/types';
 import CatRepository from './repository';
 import * as autoBind from 'auto-bind';
+import { Readable } from 'stream';
 
 class CatService {
-  static inject = [
+  static inject: Array<string> = [
     types.CatRepository
   ];
 
@@ -12,12 +13,12 @@ class CatService {
     autoBind(this);
   }
 
-  findAll() {
+  findAll(): Readable {
     const { repo } = this;
     return repo.findAll();
   }
 
-  findById(id) {
+  findById(id: string): Promise<any> {
     const { repo } = this;
     return repo.findById(id);
   }

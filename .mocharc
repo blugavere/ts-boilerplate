@@ -1,3 +1,4 @@
  --require ts-node/register
  test/*.ts
  src/**/*.test.ts
+ --exit

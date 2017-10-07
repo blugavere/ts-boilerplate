@@ -36,6 +36,7 @@ export class Server {
     this._app.listen(port, () => {
       console.log('Server Listening on port:', port);
     });
+    return this._app;
   }
 
 }

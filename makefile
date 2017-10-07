@@ -12,3 +12,6 @@ test:
 
 build:
 	tsc
+
+clean:
+	rm -rf coverage dist

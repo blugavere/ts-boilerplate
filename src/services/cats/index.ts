@@ -4,7 +4,7 @@ import { Injector } from 'boxed-injector';
 import types from '../../config/types';
 import setup from './injector.config';
 
-export default (app: Application, injector: Injector) => {
+export default (app: Application, injector: Injector): void => {
   setup(injector);
   const router = Router();
   const ctrl = injector.get(types.CatCtrl);

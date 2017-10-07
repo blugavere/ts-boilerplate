@@ -11,5 +11,8 @@
     "removeComments": true,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true  
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

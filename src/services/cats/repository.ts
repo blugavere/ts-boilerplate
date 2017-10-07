@@ -5,7 +5,7 @@ import * as autoBind from 'auto-bind';
 import { Readable } from 'stream';
 
 class CatRepository {
-  static inject = [
+  static inject: Array<string> = [
     types.cats
   ];
 
