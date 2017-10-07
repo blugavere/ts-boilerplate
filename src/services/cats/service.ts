@@ -12,6 +12,11 @@ class CatService {
     autoBind(this);
   }
 
+  findAll() {
+    const { repo } = this;
+    return repo.findAll();
+  }
+
   findById(id) {
     const { repo } = this;
     return repo.findById(id);

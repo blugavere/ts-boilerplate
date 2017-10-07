@@ -12,6 +12,11 @@ class CatRepository {
     autoBind(this);
   }
 
+  findAll() {
+    const { collection } = this;
+    return collection.find();
+  }
+
   findById(id): Promise<any> {
     const { collection } = this;
     return collection.findOne({ _id: new ObjectId(id) });

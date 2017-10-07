@@ -9,6 +9,7 @@ export default (app: Application, injector: Injector) => {
   const router = Router();
   const ctrl = injector.get(types.CatCtrl);
   router.get('/:id', ctrl.findById);
+  router.get('/', ctrl.findAll);
 
   app.use('/cats', router);
 };
