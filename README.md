@@ -1,3 +1,6 @@
+[![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
+
+
 # TS WebApp Template
 A template for an express API backed by tedious.
 
@@ -15,4 +18,10 @@ A template for an express API backed by tedious.
 
 
 ## Prior Art
-Inspired by (express-tedious-template)[https://github.com/mckalexee/express-tedious-template]
+Inspired by [express-tedious-template](https://github.com/mckalexee/express-tedious-template)
+
+
+[travis-image]: https://travis-ci.org/blugavere/ts-boilerplate.svg?branch=master
+[travis-url]: https://travis-ci.org/blugavere/ts-boilerplate
+[coveralls-image]: https://coveralls.io/repos/blugavere/ts-boilerplate/badge.svg
+[coveralls-url]: https://coveralls.io/r/blugavere/ts-boilerplate
