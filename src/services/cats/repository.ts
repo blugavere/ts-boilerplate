@@ -2,6 +2,7 @@
 import types from '../../config/types';
 import { Collection, ObjectId } from 'mongodb';
 import * as autoBind from 'auto-bind';
+import { Readable } from 'stream';
 
 class CatRepository {
   static inject = [
@@ -12,7 +13,7 @@ class CatRepository {
     autoBind(this);
   }
 
-  findAll() {
+  findAll(): Readable {
     const { collection } = this;
     return collection.find();
   }

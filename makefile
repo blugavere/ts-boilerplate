@@ -9,3 +9,6 @@ dev:
 
 test:
 	mocha --opts .mocharc
+
+build:
+	tsc
