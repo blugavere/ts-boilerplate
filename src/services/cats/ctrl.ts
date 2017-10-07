@@ -12,7 +12,7 @@ class CatCtrl {
     autoBind(this);
   }
 
-  findAll(req, res, done) {
+  findAll(req, res, done): void {
     const { service } = this;
     service.findAll()
       .pipe(JSONStream.stringify())
@@ -20,7 +20,7 @@ class CatCtrl {
       .on('error', done);
   }
 
-  findById(req, res, done) {
+  findById(req, res, done): void {
     const { service } = this;
     const { id } = req.params;
     service.findById(id)
