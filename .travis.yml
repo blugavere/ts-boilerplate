@@ -7,3 +7,5 @@ cache:
   - node_modules
 services:
 - mongodb
+after_success:
+- make coverage

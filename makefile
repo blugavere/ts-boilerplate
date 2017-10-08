@@ -8,10 +8,13 @@ dev:
 	nodemon ./src/boot.ts
 
 test:
-	mocha --opts .mocharc
+	node_modules/.bin/nyc --all node_modules/.bin/mocha --opts .mocharc
 
 build:
 	tsc
 
 clean:
-	rm -rf coverage dist
+	rm -rf coverage dist .nyc_output
+
+coverage:
+	node_modules/.bin/nyc report --reporter=text-lcov | coveralls
