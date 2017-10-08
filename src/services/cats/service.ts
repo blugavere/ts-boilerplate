@@ -24,4 +24,4 @@ class CatService {
   }
 }
 
-export default CatRepository;
+export default CatService;

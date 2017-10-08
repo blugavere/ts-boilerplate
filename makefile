@@ -10,6 +10,9 @@ dev:
 test:
 	node_modules/.bin/nyc --all node_modules/.bin/mocha --opts .mocharc
 
+watch:
+	node_modules/.bin/mocha  --watch --opts .mocharc
+
 build:
 	tsc
 

@@ -7,7 +7,7 @@
     "start": "nodemon dist/boot --watch dist --delay 5",
     "test": "make test"
   },
-  "author": "Alex McKenzie",
+  "author": "Ben Lugavere",
   "license": "MIT",
   "dependencies": {
     "JSONStream": "1.3.1",

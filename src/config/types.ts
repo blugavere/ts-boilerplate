@@ -7,8 +7,10 @@ const types = {
   CatService: null
 };
 
-Object.keys(types).forEach(t => {
-  types[t] = t;
-});
+for (const i in types) {
+  if (types[i] === null) {
+      types[i] = i;
+  }
+}
 
 export default types;

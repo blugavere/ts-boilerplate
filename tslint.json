@@ -1,4 +1,4 @@
-{
+{   
   "rules": {
     "callable-types": true,
     "class-name": true,

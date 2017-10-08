@@ -8,8 +8,8 @@ import ctrl from './ctrl';
 
 export default (injector: Injector) => {
   const db = injector.get(types.db);
+  injector.factory(types.CatCtrl, ctrl);
+  injector.factory(types.CatService, service);
   injector.factory(types.CatRepository, repository);
   injector.register(types.cats, db.collection('cats'));
-  injector.factory(types.CatService, service);
-  injector.factory(types.CatCtrl, ctrl);
 };

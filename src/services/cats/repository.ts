@@ -20,6 +20,9 @@ class CatRepository {
 
   findById(id): Promise<any> {
     const { collection } = this;
+    if (!ObjectId.isValid(id)) {
+      return Promise.resolve(null);
+    }
     return collection.findOne({ _id: new ObjectId(id) });
   }
 

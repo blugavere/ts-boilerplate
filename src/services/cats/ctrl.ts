@@ -25,7 +25,13 @@ class CatCtrl {
     const { service } = this;
     const { id } = req.params;
     service.findById(id)
-      .then(doc => res.send(doc))
+      .then(doc => {
+        if (!doc) {
+          res.status(404);
+          return res.send('Not found.');
+        }
+        res.send(doc);
+      })
       .catch(next);
   }
 
