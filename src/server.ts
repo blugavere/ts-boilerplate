@@ -1,5 +1,4 @@
 import * as express from 'express';
-import { Routes } from './routes/routes';
 import { Injector } from 'boxed-injector';
 import * as helmet from 'helmet';
 import mongo from './config/mongo';
@@ -20,7 +19,6 @@ export class Server {
     // Creates an express aplication, and imports our routes.
     // We keep the routes separate to make the code easer to comprehend.
     this._app = app;
-    this._app.use(Routes);
 
     const injector = new Injector();
 
